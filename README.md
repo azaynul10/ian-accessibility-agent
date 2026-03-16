@@ -86,5 +86,3 @@ Let's collaborate, talk about AGI, or build something awesome together!
 [![Facebook](https://img.shields.io/badge/Facebook-000000?style=for-the-badge&logo=facebook&logoColor=ccff00)](https://www.facebook.com/azaynul123)
 
 *"Stop parsing the DOM. Just look at the screen."*
-
-*"Stop parsing the DOM. Just look at the screen."*

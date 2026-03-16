@@ -2,8 +2,6 @@
 
 ![Retro Tech Robot GIF](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZWM0YjI5ZDAyOWRiZTY4YTEyNDRlODMyZTM4NDk1YTZiYjY4YjMzYSZlcD12MV9pbnRlcm5hbF9naWZzX3NlYXJjaCZjdD1n/IZY2SE2JmPgFG/giphy.gif)
 
-**⚠️ GEMINI LIVE AGENT CHALLENGE 2026 SUBMISSION ⚠️**
-
 Voice-driven, autonomous web navigation powered by Gemini 2.5 Native Audio & Vision.
 
 ## Welcome

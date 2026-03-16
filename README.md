@@ -117,11 +117,6 @@ Built by Zaynul Abedin Miah – Tech Community Leader & AI Developer.
 
 Let's collaborate, talk about AGI, or build something awesome together!
 
-## Establish Connection
-Built by Zaynul Abedin Miah – Tech Community Leader & AI Developer.
-
-Let's collaborate, talk about AGI, or build something awesome together!
-
 [![Twitter](https://img.shields.io/badge/X%20(Twitter)-000000?style=for-the-badge&logo=x&logoColor=ffffff)](https://x.com/azaynul123)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-000000?style=for-the-badge&logo=linkedin&logoColor=00ffcc)](https://www.linkedin.com/in/zaynul-abedin-miah/)
 [![Facebook](https://img.shields.io/badge/Facebook-000000?style=for-the-badge&logo=facebook&logoColor=ccff00)](https://www.facebook.com/azaynul123)

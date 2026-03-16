@@ -1,0 +1,231 @@
+@import "tailwindcss";
+
+/* ─── Neo-Brutalist Design Tokens ─── */
+:root {
+  --neon: #CCFF00;
+  --neon-dim: #ccff0033;
+  --neon-mid: #ccff0066;
+  --bg: #0A0A0A;
+  --surface: #1A1A1A;
+  --surface-alt: #141414;
+  --border: #333333;
+  --border-w: 3px;
+  --text-primary: #F0F0F0;
+  --text-secondary: #888888;
+  --accent-cyan: #00F0FF;
+  --accent-cyan-dim: #00f0ff33;
+  --danger: #FF4444;
+  --success: #00FF88;
+  --radius: 16px;
+}
+
+@theme inline {
+  --color-neon: var(--neon);
+  --color-neon-dim: var(--neon-dim);
+  --color-neon-mid: var(--neon-mid);
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-surface-alt: var(--surface-alt);
+  --color-border: var(--border);
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-accent-cyan: var(--accent-cyan);
+  --color-accent-cyan-dim: var(--accent-cyan-dim);
+  --color-danger: var(--danger);
+  --color-success: var(--success);
+  /* keep old aliases for anything that still references them */
+  --color-bg-primary: var(--bg);
+  --color-bg-secondary: var(--surface);
+  --color-bg-surface: var(--surface-alt);
+  --color-accent-yellow: var(--neon);
+  --color-accent-yellow-dim: var(--neon-dim);
+  --color-border-color: var(--border);
+}
+
+/* ─── Keyframes ─── */
+@keyframes pulse-neon {
+
+  0%,
+  100% {
+    box-shadow:
+      0 0 12px var(--neon-dim),
+      0 0 40px var(--neon-dim);
+  }
+
+  50% {
+    box-shadow:
+      0 0 24px var(--neon-mid),
+      0 0 80px var(--neon-dim),
+      0 0 120px var(--neon-dim);
+  }
+}
+
+@keyframes pulse-glow-cyan {
+
+  0%,
+  100% {
+    box-shadow: 0 0 10px var(--accent-cyan-dim), 0 0 30px transparent;
+  }
+
+  50% {
+    box-shadow: 0 0 20px var(--accent-cyan-dim), 0 0 50px var(--accent-cyan-dim);
+  }
+}
+
+@keyframes ripple {
+  0% {
+    transform: scale(1);
+    opacity: 0.5;
+  }
+
+  100% {
+    transform: scale(2.2);
+    opacity: 0;
+  }
+}
+
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes float-in {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes status-pulse {
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.4;
+  }
+}
+
+@keyframes blink {
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes scanline {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 0 4px;
+  }
+}
+
+/* ─── Global Styles ─── */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  color-scheme: dark;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text-primary);
+  font-family: var(--font-body), "Inter", system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  min-height: 100vh;
+}
+
+/* Display font utility */
+.font-display {
+  font-family: var(--font-display), "Space Grotesk", system-ui, sans-serif;
+}
+
+/* ─── Animation utilities ─── */
+.animate-pulse-neon {
+  animation: pulse-neon 2s ease-in-out infinite;
+}
+
+.animate-pulse-yellow {
+  animation: pulse-neon 2s ease-in-out infinite;
+}
+
+.animate-pulse-cyan {
+  animation: pulse-glow-cyan 3s ease-in-out infinite;
+}
+
+.animate-ripple {
+  animation: ripple 1.5s ease-out infinite;
+}
+
+.animate-spin-slow {
+  animation: spin-slow 2s linear infinite;
+}
+
+.animate-float-in {
+  animation: float-in 0.3s ease-out both;
+}
+
+.animate-status-pulse {
+  animation: status-pulse 1.5s ease-in-out infinite;
+}
+
+.animate-blink {
+  animation: blink 1s step-end infinite;
+}
+
+/* ─── Brutalist card base ─── */
+.brutalist-card {
+  background: var(--surface);
+  border: var(--border-w) solid var(--neon);
+  border-radius: var(--radius);
+}
+
+.brutalist-card-muted {
+  background: var(--surface);
+  border: var(--border-w) solid var(--border);
+  border-radius: var(--radius);
+}
+
+/* ─── Scrollbar ─── */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--surface);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-secondary);
+}

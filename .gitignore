@@ -1,0 +1,30 @@
+# === Environment & Secrets ===
+.env
+.env.*
+!.env.example
+
+# === Python ===
+__pycache__/
+*.pyc
+*.pyo
+venv/
+.venv/
+
+# === Node / Frontend ===
+node_modules/
+.next/
+out/
+build/
+
+# === OS ===
+.DS_Store
+Thumbs.db
+
+# === Logs ===
+*.log
+*.log.*
+debug_output.wav
+
+# === IDE ===
+.vscode/
+.idea/

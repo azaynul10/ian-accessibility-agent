@@ -48,7 +48,7 @@ graph TD
 ```
 
 This diagram illustrates the flow from user input through audio processing, intent extraction, and visual navigation in a looped browser interaction. If you have the original diagram details, it can be refined further.
-
+![Architecture Diagram](architecture_diagram.png)
 ## Currently Working On
 
 | Optimization Focus | Details |
@@ -70,6 +70,49 @@ Built with a thread-safe, non-blocking Python/React stack.
 ### The Beauty (Frontend)
 - React (Neo-brutalist dashboard)
 - WebSocket for real-time communication
+## 🛠️ Tech Stack
+* **AI Models:** Gemini 2.5 Flash Native Audio, Gemini 2.5 Flash (Vision)
+* **Frameworks:** Google GenAI SDK, Google Agent Development Kit (ADK)
+* **Backend:** Python, FastAPI, WebSockets (AG-UI Protocol)
+* **Browser Automation:** Playwright (Headless Chromium with Stealth Mode)
+* **Frontend:** React, Next.js, Web Audio API
+* **Cloud Infrastructure:** Google Cloud Run, Secret Manager
+
+## ⚙️ How to Run Locally
+
+### Prerequisites
+* Python 3.11+
+* Node.js 18+
+* 2 separate Google Gemini API Keys (to separate audio/vision quotas)
+
+### Backend Setup
+1. Navigate to the backend directory: `cd backend`
+2. Install dependencies: `pip install -r requirements.txt`
+3. Install Playwright browsers: `playwright install chromium`
+4. Create a `.env` file and add your keys:
+   ```env
+   GEMINI_API_KEY=your_audio_agent_key
+   GEMINI_API_KEY_BROWSER=your_vision_agent_key
+Start the server: uvicorn main:app --reload
+
+Frontend Setup
+Navigate to the frontend directory: cd frontend
+
+Install dependencies: npm install
+
+Start the development server: npm run dev
+
+Open http://localhost:3000 and hold the green button to speak!
+
+Built with ❤️ for the Gemini Live Agent Challenge 2026.
+
+
+**To push the README:**
+```bash
+git add README.md
+git commit -m "Add official project README and architecture diagram"
+git push
+```
 
 ## Establish Connection
 Built by Zaynul Abedin Miah – Tech Community Leader & AI Developer.

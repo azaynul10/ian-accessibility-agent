@@ -51,7 +51,7 @@ This diagram illustrates the flow from user input through audio processing, inte
 
 | Optimization Focus | Details |
 |--------------------|---------|
-| **🛠️ Optimizing the Agent** <br> Right now, the focus is strictly on stability and hackathon delivery! <br> <ul><li>✅ Finalizing the <strong>Dual-Model Architecture</strong> to prevent API rate limits.</li><li>✅ Perfecting the <strong>AG-UI WebSocket Protocol</strong> for real-time Voice Activity Detection.</li><li>🔄 Scaling the Playwright visual agent loop on <strong>Google Cloud Run</strong>.</li><li>🔜 Adding support for multi-tab contextual memory.</li></ul> <br> [👉 <strong>Vote for us on Devpost!</strong>](https://devpost.com/) | ![Hacking GIF](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMW5kOHg4b2UyZ2R5cGVxYXZ1bzJtcWVxdnZ6MjI0NmQ2ZjM1eTB2NyZlcD12MV9pbnRlcm5hbF9naWZzX3NlYXJjaCZjdD1n/L1R1tvI9svkIWwpVYr/giphy.gif) |
+| **🛠️ Optimizing the Agent** <br> Right now, the focus is strictly on stability and hackathon delivery! <br> <ul><li>✅ Finalizing the <strong>Dual-Model Architecture</strong> to prevent API rate limits.</li><li>✅ Perfecting the <strong>AG-UI WebSocket Protocol</strong> for real-time Voice Activity Detection.</li><li>🔄 Scaling the Playwright visual agent loop on <strong>Google Cloud Run</strong>.</li><li>🔜 Adding support for multi-tab contextual memory.</li></ul> <br> [👉 <strong>Vote for us on Devpost!</strong>]([https://devpost.com/](https://devpost.com/software/ian-intelligent-accessibility-navigator)) | ![Hacking GIF](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMW5kOHg4b2UyZ2R5cGVxYXZ1bzJtcWVxdnZ6MjI0NmQ2ZjM1eTB2NyZlcD12MV9pbnRlcm5hbF9naWZzX3NlYXJjaCZjdD1n/L1R1tvI9svkIWwpVYr/giphy.gif) |
 
 ## Tech Stack & Skills
 Built with a thread-safe, non-blocking Python/React stack.

@@ -56,18 +56,6 @@ This diagram illustrates the flow from user input through audio processing, inte
 ## Tech Stack & Skills
 Built with a thread-safe, non-blocking Python/React stack.
 
-### The Brains
-- Gemini 2.5 Flash (Native Audio & Vision)
-- Google Agent Development Kit (ADK)
-
-### The Brawn (Backend)
-- Python
-- Playwright for headless Chromium
-- Google Cloud Run
-
-### The Beauty (Frontend)
-- React (Neo-brutalist dashboard)
-- WebSocket for real-time communication
 ## 🛠️ Tech Stack
 * **AI Models:** Gemini 2.5 Flash Native Audio, Gemini 2.5 Flash (Vision)
 * **Frameworks:** Google GenAI SDK, Google Agent Development Kit (ADK)

@@ -75,6 +75,67 @@ Built with a thread-safe, non-blocking Python/React stack.
 * **Browser Automation:** Playwright (Headless Chromium with Stealth Mode)
 * **Frontend:** React, Next.js, Web Audio API
 * **Cloud Infrastructure:** Google Cloud Run, Secret Manager
+## 🛠️ Tech Stack & Skills
+
+### The Brains
+* **AI Models:** Gemini 2.5 Flash Native Audio, Gemini 2.5 Flash (Vision)
+* **Frameworks:** Google GenAI SDK, Google Agent Development Kit (ADK)
+
+### The Brawn (Backend)
+* **Language & API:** Python, FastAPI, WebSockets (AG-UI Protocol)
+* **Browser Automation:** Playwright (Headless Chromium with Stealth Mode)
+* **Cloud Infrastructure:** Google Cloud Run, Secret Manager
+
+### The Beauty (Frontend)
+* **UI:** React, Next.js (Neo-brutalist dashboard style)
+* **Audio:** Web Audio API (PCM 16kHz)
+* **Communication:** WebSocket for real-time bidirectional communication
+
+## ⚙️ How to Run Locally
+
+### Prerequisites
+* Python 3.11+
+* Node.js 18+
+* 2 separate Google Gemini API Keys (to separate audio/vision quotas)
+
+### Backend Setup
+1. Navigate to the backend directory:
+   ```bash
+   cd backend
+   ```
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+3. Install Playwright browsers:
+   ```bash
+   playwright install chromium
+   ```
+4. Create a `.env` file and add your keys:
+   ```env
+   GEMINI_API_KEY=your_audio_agent_key
+   GEMINI_API_KEY_BROWSER=your_vision_agent_key
+   ```
+5. Start the server:
+   ```bash
+   uvicorn main:app --reload
+   ```
+
+### Frontend Setup
+1. Navigate to the frontend directory:
+   ```bash
+   cd frontend
+   ```
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Start the development server:
+   ```bash
+   npm run dev
+   ```
+
+Open [http://localhost:3000](http://localhost:3000) and hold the green microphone button to speak!
 
 ## ⚙️ How to Run Locally
 
